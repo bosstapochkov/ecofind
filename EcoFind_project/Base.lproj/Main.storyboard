@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jhi-1J-y6G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jhi-1J-y6G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -21,6 +21,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3q-6n-GnK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-536" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3VL-aW-leX">
+            <objects>
+                <viewController id="8qC-9w-K9G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tY9-zd-BPj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnc-Kh-lt7">
+                                <rect key="frame" x="27" y="118" width="360" height="606"/>
+                                <string key="text">Что такое EcoFind? Это приложение, разработанное для того, чтобы помочь людям, которые заинтересованы в сохранении природных богатств и экологии. В приложении можно найти много полезных советов и статей об экологичном образе жизни. Также в этом приложении можно по отсканированной маркировке с упаковки найти ближайшие пункты приема данной продукции. По всем интересующим вопросам по работе приложения и при возникновении проблем с функциональностью обращайтесь по адресу email: nadezdamurdasheva@yandex.ru</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-6z-iCh">
+                                <rect key="frame" x="0.0" y="-8" width="416" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56379866599999995" green="0.74097388980000001" blue="0.36462754009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="О программе" prompt="           " id="1oE-ds-m8y">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left.circle" catalog="system" style="done" id="obP-jV-v6r">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="xvN-Gs-EU2" kind="show" animates="NO" id="pJY-hn-zTs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oqv-0H-9ow" firstAttribute="bottom" secondItem="wnc-Kh-lt7" secondAttribute="bottom" constant="84" id="6mA-Cg-alS"/>
+                            <constraint firstItem="wnc-Kh-lt7" firstAttribute="centerX" secondItem="tY9-zd-BPj" secondAttribute="centerX" id="VNB-TN-mde"/>
+                            <constraint firstItem="wnc-Kh-lt7" firstAttribute="centerY" secondItem="tY9-zd-BPj" secondAttribute="centerY" id="gb9-tj-IZz"/>
+                            <constraint firstItem="wnc-Kh-lt7" firstAttribute="leading" secondItem="oqv-0H-9ow" secondAttribute="leading" constant="27" id="hZl-P5-nWB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oqv-0H-9ow"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jLH-Ip-irQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFg-1I-P9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2275.36231884058" y="-654.24107142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hw3-b2-H6M">
@@ -59,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ak8-4y-dTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="844"/>
+            <point key="canvasLocation" x="-409" y="938"/>
         </scene>
         <!--EcoFind-->
         <scene sceneID="hnl-BV-JWH">
@@ -88,7 +140,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" style="done" id="Bus-Tr-FfQ">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="xvN-Gs-EU2" kind="show" id="7hG-jL-abU"/>
+                                                <segue destination="xvN-Gs-EU2" kind="show" animates="NO" id="7hG-jL-abU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -125,7 +177,7 @@
                                             <color key="titleColor" red="0.48184674979999997" green="0.38436794279999997" blue="0.38431209329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="rJk-hk-IHI" kind="show" animates="NO" id="ZAL-v5-Dto"/>
+                                            <segue destination="rJk-hk-IHI" kind="show" animates="NO" id="Tw6-Xw-yNr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykR-Sd-0Sw">
@@ -235,7 +287,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jI9-cU-VSe" kind="show" id="Dpg-Bu-fhq"/>
+                                            <segue destination="8qC-9w-K9G" kind="show" animates="NO" id="1sn-DI-vGO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -283,11 +335,11 @@
             <objects>
                 <viewController id="jI9-cU-VSe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ha-dK-SFC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXR-6j-2kP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                 <color key="backgroundColor" red="0.56379866599999995" green="0.74097388980000001" blue="0.36462754009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -299,15 +351,12 @@
                                     <navigationItem title="О программе" prompt="           " id="1nA-6b-YUX">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left.circle" catalog="system" style="done" id="4zL-ki-red">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <segue destination="xvN-Gs-EU2" kind="show" id="UFK-Ak-g6O"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqh-fH-Az3">
-                                <rect key="frame" x="20" y="90" width="374" height="694"/>
+                                <rect key="frame" x="20" y="144" width="374" height="694"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="694" id="4sG-HF-fh0"/>
                                     <constraint firstAttribute="width" constant="374" id="l0O-F9-acN"/>
@@ -335,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGE-7j-iMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239.130434782609" y="-688.39285714285711"/>
+            <point key="canvasLocation" x="-1543" y="-653"/>
         </scene>
         <!--Find Category View Controller-->
         <scene sceneID="irP-Ps-wwW">
@@ -503,8 +552,9 @@
                                     <constraint firstAttribute="height" constant="149" id="o9M-8g-tyz"/>
                                 </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBo-In-c0l">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBo-In-c0l">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.56379866599999995" green="0.74097388980000001" blue="0.36462754009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.56381213669999997" green="0.74095010760000002" blue="0.36855065819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -517,7 +567,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left.circle" catalog="system" style="done" id="gcj-rE-r6m">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
-                                                <segue destination="rJk-hk-IHI" kind="show" id="NKw-6v-J97"/>
+                                                <segue destination="rJk-hk-IHI" kind="show" animates="NO" id="dja-EU-l5N"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -528,16 +578,13 @@
                         <constraints>
                             <constraint firstItem="RGZ-14-eV4" firstAttribute="centerX" secondItem="GQW-cP-XEA" secondAttribute="centerX" id="1wI-Xt-PZO"/>
                             <constraint firstItem="B9G-9w-vgv" firstAttribute="top" secondItem="xdZ-hY-H1Q" secondAttribute="bottom" constant="8" id="2ed-cT-Iwg"/>
-                            <constraint firstItem="MBo-In-c0l" firstAttribute="trailing" secondItem="QTU-QB-PQP" secondAttribute="trailing" id="48h-ed-AQi"/>
                             <constraint firstItem="QTU-QB-PQP" firstAttribute="trailing" secondItem="xdZ-hY-H1Q" secondAttribute="trailing" constant="82" id="7Ho-SI-j9H"/>
                             <constraint firstItem="xdZ-hY-H1Q" firstAttribute="leading" secondItem="QTU-QB-PQP" secondAttribute="leading" constant="83" id="Ax0-gL-jsC"/>
-                            <constraint firstItem="MBo-In-c0l" firstAttribute="leading" secondItem="QTU-QB-PQP" secondAttribute="leading" id="QF9-Q5-eN8"/>
-                            <constraint firstItem="xdZ-hY-H1Q" firstAttribute="top" secondItem="MBo-In-c0l" secondAttribute="bottom" constant="96" id="R7C-Vd-AMz"/>
                             <constraint firstItem="QTU-QB-PQP" firstAttribute="trailing" secondItem="B9G-9w-vgv" secondAttribute="trailing" constant="17" id="SAz-vW-Knm"/>
                             <constraint firstItem="RGZ-14-eV4" firstAttribute="top" secondItem="B9G-9w-vgv" secondAttribute="bottom" constant="34" id="V5i-fE-IzE"/>
+                            <constraint firstItem="xdZ-hY-H1Q" firstAttribute="top" secondItem="QTU-QB-PQP" secondAttribute="top" constant="142" id="YQA-uv-jQR"/>
                             <constraint firstItem="RGZ-14-eV4" firstAttribute="leading" secondItem="QTU-QB-PQP" secondAttribute="leading" constant="27" id="b5p-59-crV"/>
                             <constraint firstItem="QTU-QB-PQP" firstAttribute="trailing" secondItem="RGZ-14-eV4" secondAttribute="trailing" constant="27" id="hIu-hJ-LpU"/>
-                            <constraint firstItem="MBo-In-c0l" firstAttribute="top" secondItem="GQW-cP-XEA" secondAttribute="top" id="jvN-sP-AUv"/>
                             <constraint firstItem="B9G-9w-vgv" firstAttribute="top" secondItem="xdZ-hY-H1Q" secondAttribute="bottom" constant="8" id="kfE-0n-9as"/>
                             <constraint firstItem="B9G-9w-vgv" firstAttribute="leading" secondItem="QTU-QB-PQP" secondAttribute="leading" constant="18" id="m8C-jF-Tpb"/>
                             <constraint firstItem="QTU-QB-PQP" firstAttribute="bottom" secondItem="RGZ-14-eV4" secondAttribute="bottom" constant="54" id="mbs-wB-MXp"/>
@@ -715,14 +762,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDG-1C-hOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.536231884058" y="853.79464285714278"/>
+            <point key="canvasLocation" x="823" y="1206"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="1sn-DI-vGO"/>
         <segue reference="49X-ys-fGN"/>
-        <segue reference="NKw-6v-J97"/>
-        <segue reference="UFK-Ak-g6O"/>
-        <segue reference="7Oi-Pe-A1G"/>
+        <segue reference="Tw6-Xw-yNr"/>
+        <segue reference="pJY-hn-zTs"/>
+        <segue reference="CK1-ZD-C9H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="249" height="300"/>
