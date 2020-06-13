@@ -386,6 +386,14 @@
             </objects>
             <point key="canvasLocation" x="-1543" y="-653"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="SM1-rr-UBp">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lKu-oM-W0Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kbi-1H-xWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568" y="-823"/>
+        </scene>
         <!--Find Category View Controller-->
         <scene sceneID="irP-Ps-wwW">
             <objects>
@@ -601,10 +609,10 @@
             </objects>
             <point key="canvasLocation" x="2456.521739130435" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--States View Controller-->
         <scene sceneID="k0n-GO-F8T">
             <objects>
-                <viewController id="C3U-Bg-ZxC" sceneMemberID="viewController">
+                <viewController id="C3U-Bg-ZxC" customClass="StatesViewController" customModule="EcoFind_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7tf-XA-fYM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,15 +641,40 @@
                                 <rect key="frame" x="0.0" y="116" width="414" height="726"/>
                                 <color key="backgroundColor" red="1" green="0.99998801950000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="119" id="Gzf-4Y-mZ4">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StatesCell" rowHeight="123" id="Gzf-4Y-mZ4" customClass="StatesTableViewCell" customModule="EcoFind_project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gzf-4Y-mZ4" id="AJf-De-z5S">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="konteiner1" translatesAutoresizingMaskIntoConstraints="NO" id="qlL-xG-Owk">
+                                                    <rect key="frame" x="7" y="11" width="143" height="100"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z1-wS-JnF">
+                                                    <rect key="frame" x="148" y="23" width="246" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qlL-xG-Owk" secondAttribute="bottom" constant="12" id="8a4-yQ-RYN"/>
+                                                <constraint firstItem="7Z1-wS-JnF" firstAttribute="trailing" secondItem="AJf-De-z5S" secondAttribute="trailingMargin" id="OP3-gD-PWu"/>
+                                                <constraint firstAttribute="trailing" secondItem="qlL-xG-Owk" secondAttribute="trailing" constant="264" id="VbH-tI-IQ1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7Z1-wS-JnF" secondAttribute="bottom" constant="13" id="XJE-QK-xKD"/>
+                                                <constraint firstItem="qlL-xG-Owk" firstAttribute="leading" secondItem="AJf-De-z5S" secondAttribute="leading" constant="7" id="eKx-Ts-cHn"/>
+                                                <constraint firstItem="7Z1-wS-JnF" firstAttribute="top" secondItem="AJf-De-z5S" secondAttribute="topMargin" constant="12" id="jcS-ta-fse"/>
+                                                <constraint firstItem="qlL-xG-Owk" firstAttribute="top" secondItem="AJf-De-z5S" secondAttribute="top" constant="11" id="pqZ-R7-PHY"/>
+                                                <constraint firstItem="7Z1-wS-JnF" firstAttribute="leading" secondItem="AJf-De-z5S" secondAttribute="leadingMargin" constant="128" id="uMC-Cx-ZyH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="imageStates" destination="qlL-xG-Owk" id="rK7-7X-j5e"/>
+                                            <outlet property="labelStates" destination="7Z1-wS-JnF" id="Qlm-0P-hVb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -660,6 +693,9 @@
                         <viewLayoutGuide key="safeArea" id="LfC-ku-Ngt"/>
                     </view>
                     <navigationItem key="navigationItem" id="qmB-dz-cgS"/>
+                    <connections>
+                        <outlet property="tableViewStates" destination="cTi-3v-G40" id="RjO-Fd-QVE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPW-ve-bFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -766,16 +802,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1sn-DI-vGO"/>
         <segue reference="49X-ys-fGN"/>
-        <segue reference="Tw6-Xw-yNr"/>
-        <segue reference="pJY-hn-zTs"/>
+        <segue reference="dja-EU-l5N"/>
+        <segue reference="qAO-og-3Dd"/>
         <segue reference="CK1-ZD-C9H"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="249" height="300"/>
         <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
         <image name="chevron.left.circle" catalog="system" width="128" height="121"/>
+        <image name="konteiner1" width="268" height="201"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="logoGreenMenu" width="91.5" height="91"/>
         <image name="logoWhiteMenu" width="128" height="122"/>

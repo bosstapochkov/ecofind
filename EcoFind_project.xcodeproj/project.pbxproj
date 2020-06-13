@@ -12,6 +12,8 @@
 		0D392809246C1EEE0028787E /* FindCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D392808246C1EEE0028787E /* FindCategoryViewController.swift */; };
 		0D39280D246C379B0028787E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39280C246C379B0028787E /* MapViewController.swift */; };
 		0D39280F246C45EB0028787E /* DescriptionFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39280E246C45EB0028787E /* DescriptionFindViewController.swift */; };
+		0DA6385D2493D6DE00C88E08 /* StatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6385C2493D6DE00C88E08 /* StatesViewController.swift */; };
+		0DA6385F2493D8F700C88E08 /* StatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6385E2493D8F700C88E08 /* StatesTableViewCell.swift */; };
 		0DA728122469ACB90060CE1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA728112469ACB90060CE1D /* AppDelegate.swift */; };
 		0DA728142469ACB90060CE1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA728132469ACB90060CE1D /* SceneDelegate.swift */; };
 		0DA728192469ACB90060CE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA728172469ACB90060CE1D /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		0D392808246C1EEE0028787E /* FindCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCategoryViewController.swift; sourceTree = "<group>"; };
 		0D39280C246C379B0028787E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0D39280E246C45EB0028787E /* DescriptionFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionFindViewController.swift; sourceTree = "<group>"; };
+		0DA6385C2493D6DE00C88E08 /* StatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesViewController.swift; sourceTree = "<group>"; };
+		0DA6385E2493D8F700C88E08 /* StatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesTableViewCell.swift; sourceTree = "<group>"; };
 		0DA7280E2469ACB90060CE1D /* EcoFind_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoFind_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA728112469ACB90060CE1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA728132469ACB90060CE1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,13 +111,15 @@
 		0DA728102469ACB90060CE1D /* EcoFind_project */ = {
 			isa = PBXGroup;
 			children = (
+				0DA6385C2493D6DE00C88E08 /* StatesViewController.swift */,
+				0D392808246C1EEE0028787E /* FindCategoryViewController.swift */,
+				0DA6385E2493D8F700C88E08 /* StatesTableViewCell.swift */,
+				0D392806246C1ECE0028787E /* FindCategoryTableViewCell.swift */,
 				0DA728112469ACB90060CE1D /* AppDelegate.swift */,
 				0DA728132469ACB90060CE1D /* SceneDelegate.swift */,
 				0DA728172469ACB90060CE1D /* Main.storyboard */,
 				0D39280E246C45EB0028787E /* DescriptionFindViewController.swift */,
 				0D39280C246C379B0028787E /* MapViewController.swift */,
-				0D392808246C1EEE0028787E /* FindCategoryViewController.swift */,
-				0D392806246C1ECE0028787E /* FindCategoryTableViewCell.swift */,
 				0D29F8D8246ADD550081BFCB /* MainViewController.swift */,
 				0DA7281A2469ACB90060CE1D /* Assets.xcassets */,
 				0DA7281C2469ACB90060CE1D /* LaunchScreen.storyboard */,
@@ -271,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA6385D2493D6DE00C88E08 /* StatesViewController.swift in Sources */,
 				0D392807246C1ECE0028787E /* FindCategoryTableViewCell.swift in Sources */,
 				0D39280D246C379B0028787E /* MapViewController.swift in Sources */,
 				0D29F8D9246ADD550081BFCB /* MainViewController.swift in Sources */,
 				0D39280F246C45EB0028787E /* DescriptionFindViewController.swift in Sources */,
 				0DA728122469ACB90060CE1D /* AppDelegate.swift in Sources */,
 				0D392809246C1EEE0028787E /* FindCategoryViewController.swift in Sources */,
+				0DA6385F2493D8F700C88E08 /* StatesTableViewCell.swift in Sources */,
 				0DA728142469ACB90060CE1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
