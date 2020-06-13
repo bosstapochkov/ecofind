@@ -54,6 +54,8 @@ class FindCategoryViewController: UIViewController, UITableViewDelegate, UITable
         cell.imageFind.image = UIImage(named: namesImages[indexPath.row])
         return cell
     }
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         /*let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DescriptionFindViewController") as! DescriptionFindViewController

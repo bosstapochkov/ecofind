@@ -9,8 +9,8 @@
 import UIKit
 
 class StatesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let namesImages=["konteiner1"]
-    let textImages=["Какую упаковку сдавать в контейнер-сетку?"]
+    let namesImages=["konteiner1","cleaning_arms","recycle_bottle","where_find_mark","musor_kak_mnogo","yellow_and_green"]
+    let textImages=["Какую упаковку сдавать в контейнер-сетку?","Как правильно мыть руки, чтобы не навредить природе?","Как подготовить упаковку для переработки?","Где найти маркировку на упаковке?","Сколько вы произвели мусора?","Что сдавать в специализированные контейнеры?"]
     @IBOutlet weak var tableViewStates: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,15 @@ class StatesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return namesImages.count
     }
 
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    /*public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         tableView.rowHeight = 100
         let cell = tableViewStates.dequeueReusableCell(withIdentifier: "StatesCell") as! StatesTableViewCell
         cell.labelStates.text = textImages[indexPath.row]
         cell.imageStates.image = UIImage(named: namesImages[indexPath.row])
         return cell
-    }
+    }*/
+    
+    /*
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         /*let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DescriptionFindViewController") as! DescriptionFindViewController
@@ -37,8 +39,14 @@ class StatesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "DescriptionFindViewController")
         show(vc, sender: self)
+    }*/
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.rowHeight = 100
+        let cell = tableViewStates.dequeueReusableCell(withIdentifier: "StatesCell") as! StatesTableViewCell
+        cell.labelStates.text = textImages[indexPath.row]
+        cell.imageStates.image = UIImage(named: namesImages[indexPath.row])
+        return cell
     }
-
 }
 
 
